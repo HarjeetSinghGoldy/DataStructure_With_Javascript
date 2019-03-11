@@ -19,7 +19,7 @@ class LinkedList {
       return;
     }
     // Add new node to the end of the LinkedList
-    let current = this.node;
+    let current = this.head;
     while (current && current.next) {
       current = current.next;
     }
@@ -35,9 +35,9 @@ class LinkedList {
     }
     //Search and remove the node
     let current = this.head;
-    let previous = currnet;
+    let previous = current;
     while (current && current.value != value) {
-      previous = currnet;
+      previous = current;
       current = current.next;
     }
     if (current == null) {
@@ -55,7 +55,7 @@ class LinkedList {
       current = current.next;
     }
     // node not found
-    if (currnet == null) {
+    if (current == null) {
       return false;
     }
     return true;
@@ -70,3 +70,11 @@ class LinkedList {
     }
   }
 }
+
+var LL = new LinkedList();
+
+LL.insert(1)
+LL.insert(4)
+LL.insert(6)
+LL.insert(9)
+LL.insert(10)
