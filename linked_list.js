@@ -1,3 +1,21 @@
+
+🕒 Time Complexity:
+Access: O(N)
+Insertion: O(1)
+Deletion: O(1)
+Search: O(N)
+•
+✅Efficient: Insertion & Deletion
+❌Inefficient: Access Time
+•
+📍Linked List is a linear data structure, in which each element is a separate object. These elements are not stored at the contiguous location. The elements are linked using pointers.
+•
+📍Each node is composed of data and a reference. The last node has a reference to null.
+•
+📍The entry point into a linked list is called the head of the list. It holds the reference of the first node (null, if the list is empty).
+
+
+
 class Node {
   constructor(value) {
     this.value = value;
