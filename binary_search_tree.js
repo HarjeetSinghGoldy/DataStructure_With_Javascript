@@ -12,10 +12,10 @@
 // 📍At each node, we will have larger value nodes at right and smaller value nodes at left. This property makes it faster to search because on each comparison we can skip the other half of the subtree.
 
 class Node {
-  constructor(data) {
+  constructor(data, left = null, right = null) {
     this.data = data;
-    this.left = null;
-    this.right = null;
+    this.left = left;
+    this.right = right;
   }
 }
 
@@ -23,7 +23,7 @@ class BST {
   constructor() {
     this.root = null;
   }
-  
+
   getRootNode() {
     return this.root;
   }
